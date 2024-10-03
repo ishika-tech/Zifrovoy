@@ -9,7 +9,7 @@ const authsignal = new Authsignal({
 
 async function fetchData(email) {
     try {
-        const url = `http://10.0.0.206:5000/api/auth/${email}`;
+        const url = `http://localhost:5000/api/auth/${email}`;
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -26,7 +26,7 @@ async function fetchData(email) {
 
 async function fetchPass(email) {
     try {
-        const url = `http://10.0.0.206:5000/api/passKey/${email}`;
+        const url = `http://localhost:5000/api/passKey/${email}`;
         const response = await fetch(url);
 
         if (!response.ok) {
